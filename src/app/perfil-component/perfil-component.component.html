@@ -1,0 +1,355 @@
+
+<style>
+.container {
+  margin: 0;
+  padding: 0;
+  margin-left: 20px;
+  margin-right: 20px;
+  height: 100%;
+}
+
+.count{
+  margin: 0px;
+  margin-top: 8px;
+  background-color: green;
+  width: 50px;
+  height: 20px;
+  font-size: 15px;
+  padding-top: 4px;
+  padding-left: 5px;
+  color: white;
+  border-radius: 5px;
+  margin-left: 20px;
+}
+
+.name{
+  margin: 0px;
+  margin-left: 20px;
+  margin-top: 8px;
+  font-size: 20px;
+}
+
+.nameInfo{
+  margin: 0px;
+  margin-left: 20px;
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  float: left;
+  color: rgb(0, 168, 0);
+}
+
+.iconInfo{
+  margin: 0px;
+  margin-top: 20px;
+  margin-right: 20px;
+  font-size: 20px;
+  float: right;
+  color: gray;
+}
+
+.iconInfo1{
+  margin: -40px;
+  margin-right: 1px;
+  font-size: 18px;
+  float: right;
+  color: #bbb;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: white;
+  border-bottom:1px solid #bbb;
+}
+
+li {
+  float: left;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+li a {
+  display: block;
+  color: gray;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.active {
+    color: black;
+    border-color: rgb(78, 192, 153);
+    border-width: 2px;
+    border-style: solid;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-left-width: 0px;
+}
+
+.userContainer{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: none;
+}
+
+.buttonEditar{
+  float: right;
+}
+
+.button1{
+  height: 40px;
+  padding-left: 7px;
+  padding-right: 7px;
+  background-color: green;
+  border-radius: 5px;
+  border: none;
+  color: white;
+}
+
+.button2{
+  height: 40px;
+  padding: 0px;
+  margin-left: 20px;
+  margin-right: 20px;
+  background-color: green;
+  border-radius: 5px;
+  border: none;
+  color: white;
+}
+
+.white{
+  font-size: 15px;
+  color: white;
+}
+
+.containerInfo{
+  height: 100%;
+}
+
+.ContainerLeft{
+  padding: 0px;
+  margin: 0px;
+  display: inline-block;
+  background-color: rgb(245, 245, 245);
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.ContainerCenter{
+  padding: 0px;
+  margin: 0px;
+  background-color:white;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
+.ContainerRight{
+  padding: 0px;
+  margin: 0px;
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  float: right;
+}
+
+.noPublic{
+  background-color: rgb(248, 247, 247);
+  border-radius: 5px;
+  height: 100px;
+  padding: 10px;
+  margin: 10px;
+  margin-top: 0px;
+  color: #bbb;
+  font-size: 16px;
+}
+
+.noPrivate{
+  background-color: rgb(255, 231, 231);
+  border-radius: 5px;
+  height: 100px;
+  padding: 10px;
+  margin: 10px;
+  color: #bbb;
+  font-size: 16px;
+}
+.item1 { 
+  grid-area: header;
+  width: 400px;
+}
+.item2 { 
+  grid-area: main;
+  width: 1050px;
+}
+.item3 { 
+  grid-area: final;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  width: 450px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:'header header main main main main main final';
+  height: 1200px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+.ContainerCircle{
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+.circle{
+  height: 115px;
+  width: 115px;
+  border-radius: 50%;
+  border: 6px solid rgb(248, 245, 245);
+  line-height: 115px;
+  text-align: center;
+  margin-right: 20px;
+}
+.textInfo{
+  margin: 0px;
+  padding: 0px;
+  margin-left: -18px;
+  padding-left: -18px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: black;
+  font-weight: bold;
+}
+.textInfo2{
+  margin: 0px;
+  padding: 0px;
+  margin-left: -18px;
+  padding-left: -18px;
+  margin-top: 8px;
+  font-size: 17px;
+  color: rgb(219, 217, 217);
+}
+.textFooter{
+  font-size: 22px;
+  font-weight: bold;
+  float: left;
+  margin-left: 20px;
+  margin-bottom: 40px;
+}
+.textFooter2{
+  font-size: 16px;
+  font-weight: bold;
+  color: rgb(143, 143, 143);
+  float: left;
+  margin-top: 70px;
+  margin-left: -70px;
+}
+.textFooter3{
+  font-size: 16px;
+  font-weight: bold;
+  color: #bbb;
+  margin-left: -90px;
+  float: left;
+  margin-top: 100px;
+}
+
+.iconInfo2{
+  margin: 0px;
+  margin-right: 10px;
+  margin-top: 80px;
+  font-size: 30px;
+  float: right;
+  color: #bbb;
+}
+
+</style>
+
+<div class="container">
+    
+    <ul class="userContainer">
+      <li  (click)="back()"><a href="#"><fa-icon [icon]="arrowIcon"></fa-icon></a></li>
+      <li><ngx-avatar class="avatar" name="{{user.first_name}} {{user.last_name}}"></ngx-avatar></li>
+      <li><p class="name">{{user.first_name}} {{user.last_name}}</p></li>
+      <li><p class="count">Cuenta</p></li>
+      <li class="buttonEditar"><button class="button2"><a href="#"><fa-icon class="white" [icon]="ellipsisVcon"></fa-icon></a></button></li>
+      <li class="buttonEditar"><button class="button1">Editar {{user.first_name}}</button></li>
+      
+    
+    </ul>
+    
+    <ul>
+        <li><a class="active" href="#">Detalles</a></li>
+        <li><a href="#">Eventos</a></li>
+        <li><a href="#">Proyectos</a></li>
+        <li><a href="#">Tareas</a></li>
+    </ul>
+
+    <div class="grid-container">
+      <div class="item1">
+        <div class="ContainerLeft">
+          <p class="nameInfo">{{user.first_name}} {{user.last_name}}</p>
+          <fa-icon class="iconInfo" [icon]="editIcon"></fa-icon>
+          
+        </div>
+      </div>
+      <div class="item2">
+        <div class="ContainerCenter">
+          <div class="noPublic">
+            <p>No public profile</p>
+            <fa-icon class="iconInfo1" [icon]="editIcon"></fa-icon>
+          </div>
+          <div class="noPrivate">
+            <p>No prive notes</p>
+            <fa-icon class="iconInfo1" [icon]="editIcon"></fa-icon>
+          </div>
+          <div>
+            <p class="textFooter">Permisos:</p>
+            <p class="textFooter2">Administrador</p>
+            <div class="footerInfo">
+              <p class="textFooter3">Es este usuario un administrador?</p>
+              <fa-icon class="iconInfo2" [icon]="toggleIcon"></fa-icon>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="item3">
+        <div class="ContainerRight">
+          <div class="ContainerCircle">
+            <P class="textInfo">Proyectos</P>
+            <div class="circle"><span>1</span></div>
+            <P class="textInfo2">Archivados</P>
+            <P class="textInfo2">0</P>
+          </div>
+          <div class="ContainerCircle">
+            <P class="textInfo">Tareas</P>
+            <div class="circle"><span>2</span></div>
+            <P class="textInfo2">Terminado</P>
+            <P class="textInfo2">0</P>
+          </div>
+          <div class="ContainerCircle">
+            <P class="textInfo">Hitos</P>
+            <div class="circle"><span>0</span></div>
+            <P class="textInfo2">Terminado</P>
+            <P class="textInfo2">0</P>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>

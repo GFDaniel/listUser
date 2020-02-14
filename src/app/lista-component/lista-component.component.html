@@ -1,0 +1,137 @@
+<style>
+
+.container {
+  margin: 0;
+  padding: 0;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+    border: #D3D3D3;
+    border-width: 1px;
+    border-top-width: 0px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-style: solid;
+  }
+
+  ul li {
+    margin: 0px;
+    padding: 0px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 30px;
+    margin-bottom: 5px;
+    font-size: 18px;
+    color: gray;
+  }
+  
+  .left {
+    float: left;
+  }
+
+  .right {
+      float: right;
+  }
+  
+  li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    padding: 20px 20px;
+    text-decoration: none;
+  }
+
+table{
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table td, table th {
+  border: 0px solid #ddd;
+  padding: 8px;
+}
+
+table td {
+  margin: 0px;
+  padding: 0px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  height: 40px;
+}
+table tr:hover {background-color: #ddd;}
+
+table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #245A91;
+  border: 0px solid #245A91;
+  color: white;
+}
+table tr {
+  border: 0px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+.name{
+  color:  rgb(1, 121, 194);
+}
+
+
+</style>
+
+<div class="container">
+  
+  <ul>
+    <li class="left">Empresas</li>
+    <li class="left">Personas</li>
+    <li class="left">Historial de acesso</li>
+  </ul>
+
+  <h1>Personas</h1>
+
+  <div class="row mt-5">
+    <div class="col">
+      <table>
+        <thead>
+          <tr>
+            <th scope="col"></th>
+            <th scope="col"></th>
+            <th scope="col"></th>
+            <th scope="col">Name</th>
+            <th scope="col">Lastname</th>
+            <th scope="col">WEBSITE</th>
+            <th scope="col">DOB</th>
+            <th scope="col">EMAIL</th>
+            <th scope="col">ADDRESS</th>
+            <th scope="col">PHONE</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let user of users; index as i" (click)="onPreUser(user)">
+
+            <td> </td>
+            <td><ngx-avatar name="{{user.first_name}} {{user.last_name}}"></ngx-avatar></td>
+            <td> </td>
+            <td class="name">{{user.first_name}}</td>
+            <td class="name">{{user.last_name}}</td>
+            <td>{{user.website}}</td>
+            <td>{{user.dob}}</td>
+            <td class="email">{{user.email}}</td>
+            <td>{{user.address}}</td>
+            <td>{{user.phone}}</td>
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

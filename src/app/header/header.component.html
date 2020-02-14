@@ -1,0 +1,74 @@
+<style>
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: rgb(0, 94, 165);
+    }
+    
+    .left {
+      float: left;
+    }
+
+    .right {
+        float: right;
+    }
+
+    .rightIcon{
+        float: right;
+    }
+    
+    li a {
+      display: inline-block;
+      color: white;
+      text-align: center;
+      padding: 17px 17px;
+      text-decoration: none;
+    }
+
+    li input {
+        background-color: rgb(44, 125, 179);
+        color: white;
+        border: none;
+        margin: 0px;
+        padding: 0px;
+        padding-left: 10px;
+        margin-top: 12px;
+        margin-bottom: 12px;
+        margin-right: 80px;
+        height: 30px;
+        width: 300px;
+        border-radius: 5px;
+    }
+
+    ::-webkit-input-placeholder { /* Edge */
+        color: white;
+        }
+
+        :-ms-input-placeholder { /* Internet Explorer 10-11 */
+        color: white;
+        }
+
+        ::placeholder {
+        color: white;
+        }
+    
+</style>
+
+<ul>
+    <li class="left"><a href="#">Inicio</a></li>
+    <li class="left"><a href="">Proyectos</a></li>
+    <li class="left"><a href="#">Todo</a></li>
+    <li class="left"><a href="#">Calendario</a></li>
+    <li class="left"><a href="#">Estados</a></li>
+    <li class="left"><a href="#">Personas</a></li>
+
+    <li class="right"><a href="#"><fa-icon [icon]="filmIcon"></fa-icon></a></li>
+    <li class="right"><a href="#"><fa-icon [icon]="bellIcon"></fa-icon></a></li>
+    <li class="right"><a href="#"><fa-icon [icon]="folderIcon"></fa-icon></a></li>
+    <li class="right"><a href="#"><fa-icon [icon]="plusIcon"></fa-icon></a></li>
+    <li class="right"><input placeholder="Buscar"></li>
+    <li class="rightIcon"><a href="#"><fa-icon [icon]="searchIcon"></fa-icon></a></li>
+    
+</ul>
